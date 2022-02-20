@@ -1,7 +1,11 @@
+package Lesson1;
+
 public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
         checkSum(4, 15);
+        printColor(101);
+        compareNumbers();
     }
 
     public static void printThreeWords() {
@@ -21,7 +25,26 @@ public class HomeWorkApp {
         }
     }
     public static void printColor(int value) {
-        if (value<0)
+
+        if (value <= 0) {
+            System.out.println("Красный");
+        }
+        else if (value > 0&& value <= 100) {
+            System.out.println("Желтый");
+        }
+        else  {
+            System.out.println("Зеленый");
+        }
+    }
+    public static void compareNumbers() {
+        int a = 3;
+        int b = 15;
+        if (a >= b) {
+            System.out.println("a >= b");
+        }
+        else {
+            System.out.println("a < b");
+        }
     }
 
 }
